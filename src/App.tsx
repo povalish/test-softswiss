@@ -8,14 +8,15 @@ import { GameDetails } from 'pages/GameDetails';
 import { GlobalStyles } from 'ui-kit/GlobalStyles';
 
 
+
 export const App: React.FC = () => (
   <BrowserRouter>
     <GlobalStyles />
 
     <Provider store={store}>
       <Routes>
-        <Route path="/" element={<GamesList />} />
-        <Route path="/details/:id" element={<GameDetails />} />
+        <Route path='/' element={<GamesList />} />
+        <Route path='/details/:id' element={<GameDetails />} />
       </Routes>
     </Provider>
   </BrowserRouter>

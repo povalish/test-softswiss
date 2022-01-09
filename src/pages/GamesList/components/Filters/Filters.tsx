@@ -5,8 +5,8 @@ import { Box, Grid } from '@mui/material';
 import { Filter } from 'ui-kit/Filter';
 
 import { AppDispatch, RootState } from 'store';
-import { 
-  setProviderFilter, 
+import {
+  setProviderFilter,
   setRealFilter,
   setAvailableProviderFilters,
   setAvailableRealFilters,
@@ -48,32 +48,32 @@ export const Filters: React.FC = () => {
 
   return (
     <Box mb={2}>
-      <Grid 
-        container 
-        spacing={2} 
-        sx={{ flexGrow: 1 }} 
+      <Grid
+        container
+        spacing={2}
+        sx={{ flexGrow: 1 }}
         mt={2}
       >
         <Grid item xs={2}>
-          <Filter 
+          <Filter
             label='Валюта'
             placeholder='Все'
-            items={filters.availableRealFilters} 
+            items={filters.availableRealFilters}
             value={filters.realFilter}
-            onChange={handleChangeReal} 
+            onChange={handleChangeReal}
           />
         </Grid>
 
         <Grid item xs={2}>
-          <Filter 
+          <Filter
             label='Поставщик'
             placeholder='Все'
-            items={filters.availableProviderFilters} 
+            items={filters.availableProviderFilters}
             value={filters.providerFilter}
-            onChange={handleChangeProvider} 
+            onChange={handleChangeProvider}
           />
         </Grid>
       </Grid>
     </Box>
   );
-}
+};

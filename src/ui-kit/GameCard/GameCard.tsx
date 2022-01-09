@@ -12,7 +12,6 @@ import Typography from '@mui/material/Typography';
 
 
 
-
 interface IGameCard {
   title: string;
   id: string;
@@ -21,20 +20,20 @@ interface IGameCard {
 export const GameCard: React.FC<IGameCard> = ({ title, id }) => (
   <Card sx={{ maxWidth: 345 }}>
     <CardMedia
-      component="img"
-      height="140"
-      image="https://picsum.photos/200/300"
-      alt="green iguana"
+      component='img'
+      height='140'
+      image='https://picsum.photos/200/300'
+      alt='green iguana'
     />
 
     <CardContent>
-      <Typography gutterBottom variant="h5">
+      <Typography gutterBottom variant='h5'>
         {title}
       </Typography>
     </CardContent>
 
     <CardActions>
-      <Button component={RouterLink} to={`/details/${id}`} size="small">
+      <Button component={RouterLink} to={`/details/${id}`} size='small'>
         Подробнее
       </Button>
     </CardActions>

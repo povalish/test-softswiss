@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link as RouterLink } from "react-router-dom";
-import { 
-  AppBar, 
-  Toolbar, 
-  Box, 
-  CircularProgress, 
+import { useParams, Link as RouterLink } from 'react-router-dom';
+import {
+  AppBar,
+  Toolbar,
+  Box,
+  CircularProgress,
   Typography,
   Button,
 } from '@mui/material';
@@ -36,10 +36,10 @@ export const GameDetails: React.FC = () => {
     <>
       <AppBar position='static'>
         <Toolbar>
-          <Button 
-            style={{ color: '#ffffff' }} 
-            to="/" 
-            size="large"
+          <Button
+            style={{ color: '#ffffff' }}
+            to='/'
+            size='large'
             component={RouterLink}
           >
             {'<-'} Назад
@@ -47,16 +47,16 @@ export const GameDetails: React.FC = () => {
         </Toolbar>
       </AppBar>
 
-      <Box 
-        p={2} 
-        sx={{ 
+      <Box
+        p={2}
+        sx={{
           display: 'flex',
           justifyContent: 'center',
           paddingTop: '40px',
         }}
       >
         {game.status === 'loaded' && (
-          <Typography variant="h1">
+          <Typography variant='h1'>
             {game.payload.title}
           </Typography>
         )}

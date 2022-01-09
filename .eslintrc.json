@@ -39,6 +39,8 @@
     "react/self-closing-comp": "warn",
     "react/jsx-props-no-spreading": "off",
     "react/no-array-index-key": "off",
+    "react/function-component-definition": "off",
+    "react/require-default-props": "off",
     
     "import/order": "off",
     "import/no-unresolved": "off",

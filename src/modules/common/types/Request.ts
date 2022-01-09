@@ -21,4 +21,3 @@ export type Request<T> =
   | IRequestLoading
   | IRequestLoaded<T>
   | IRequestError;
-  

@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 
 
@@ -30,11 +31,11 @@ export const filtersSlice = createSlice({
       state.currentPage = 1;
     },
   },
-})
+});
 
-export const { 
-  setRealFilter, 
-  setProviderFilter, 
+export const {
+  setRealFilter,
+  setProviderFilter,
   setAvailableRealFilters,
   setAvailableProviderFilters,
   loadNextPage,
